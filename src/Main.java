@@ -1,3 +1,5 @@
+import br.com.alura.screenmatch.calculo.Filtrorec;
+import br.com.alura.screenmatch.modelos.Episodio;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 import br.com.alura.screenmatch.calculo.CalculadoraDeTempo;
@@ -40,6 +42,15 @@ public class Main {
         calculadora.inclui(outrofilme);
         calculadora.inclui(lost);
         System.out.println(calculadora.getTempoTotal());
+
+        Filtrorec filtro = new Filtrorec();
+        filtro.filtra(meuFilme);
+
+        Episodio episodio = new Episodio();
+        episodio.setNumero(1);
+        episodio.setSerie(lost);
+        episodio.setTotalVisualizações(300);
+        filtro.filtra(episodio);
 
 
     }
