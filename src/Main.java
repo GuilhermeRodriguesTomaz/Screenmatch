@@ -10,8 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Filme meuFilme = new Filme();
-        meuFilme.setNome("O Poderoso Chefão");
+        Filme meuFilme = new Filme("O Poderoso Chefão");
         meuFilme.setAnoDeLancamento(1970);
         meuFilme.setDuracaoEmMinutos(180);
         System.out.println("Duração do filme: " + meuFilme.getDuracaoEmMinutos());
@@ -34,8 +33,7 @@ public class Main {
         lost.setMinutosPorEpisodio(50);
         System.out.println("Duração da Série: " + lost.getDuracaoEmMinutos());
 
-        Filme outrofilme = new Filme();
-        outrofilme.setNome("Avatar");
+        Filme outrofilme = new Filme("Avatar");
         outrofilme.setAnoDeLancamento(2023);
         outrofilme.setDuracaoEmMinutos(200);
 
@@ -54,8 +52,7 @@ public class Main {
         episodio.setTotalVisualizações(300);
         filtro.filtra(episodio);
 
-        Filme filmeDoPaulo = new Filme();
-        filmeDoPaulo.setNome("Dogville");
+        Filme filmeDoPaulo = new Filme("Dogville");
         filmeDoPaulo.setDuracaoEmMinutos(200);
         filmeDoPaulo.setAnoDeLancamento(2003);
         filmeDoPaulo.avalia(10);
